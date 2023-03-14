@@ -73,6 +73,14 @@ export const constantRoutes = [
         component: () => import('@/views/vod/teacher/form'),
         meta: { title: '添加讲师', icon: 'tree' }
       }
+      ,
+      {
+        path: 'teacher/edit/:id',
+        name: 'teacherEdit',
+        component: () => import('@/views/vod/teacher/form'),
+        meta: { title: '修改讲师', icon: 'tree' },
+        hidden:true
+      }
     ]
   },
 
